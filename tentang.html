@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jaga Pesisir - Kalkulator Aksi Mandiri & Profil Pengembang Proyek UTS Pemrograman Web.">
+  <title>Jaga Pesisir | Aksi Mandiri & Profil Pengembang</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==============================================
+       HEADER & NAVIGASI
+       ============================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Beranda Jaga Pesisir">
+        <img src="images/logo-icon.png" alt="Logo Jaga Pesisir" class="logo-icon">
+        <span class="logo-text">Jaga<strong>Pesisir</strong></span>
+      </a>
+
+      <!-- Checkbox Hack untuk Navigasi Mobile Bebas JS -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka navigasi menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <nav class="main-navigation" aria-label="Navigasi Utama">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="edukasi.html" class="nav-link">Krisis & SDG</a></li>
+          <li class="nav-item"><a href="panduan.html" class="nav-link">Pilar Konservasi</a></li>
+          <li class="nav-item"><a href="ekspedisi.html" class="nav-link">Jelajah & Carousel</a></li>
+          <li class="nav-item"><a href="tentang.html" class="nav-link active">Aksi Mandiri & Profil</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SECTION 6: INTERAKTIF CSS MURNI (Checklist Aksi Mandiri) -->
+    <section id="interaktif" class="interactive-section" style="padding-top: 60px;">
+      <div class="container">
+        <header class="section-header text-center">
+          <h2 class="section-title">Kalkulator Kebiasaan Bahari Kamu</h2>
+          <p class="section-subtitle">
+            Ceklis langkah ramah pesisir yang sudah kamu lakukan sehari-hari untuk melihat tingkat kontribusimu terhadap SDG 13 & 14!
+          </p>
+        </header>
+
+        <div class="checklist-card">
+
+          <div class="checklist-form">
+            <!-- Item 1 -->
+            <label class="check-item" for="chk-1">
+              <input type="checkbox" id="chk-1" class="custom-checkbox">
+              <span class="check-box-visual" aria-hidden="true"></span>
+              <span class="check-text-content">
+                <strong>Gunakan Tas Belanja & Tumbler Pribadi</strong>
+                <small>Mencegah sampah plastik sekali pakai hanyut ke muara dan lautan.</small>
+              </span>
+              <span class="check-impact-tag">+15 Poin Laut</span>
+            </label>
+
+            <!-- Item 2 -->
+            <label class="check-item" for="chk-2">
+              <input type="checkbox" id="chk-2" class="custom-checkbox">
+              <span class="check-box-visual" aria-hidden="true"></span>
+              <span class="check-text-content">
+                <strong>Pilih Tabir Surya Ramah Karang (Oxybenzone-Free)</strong>
+                <small>Mencegah zat kimia memicu pemutihan pada jaringan karang saat berenang di pantai.</small>
+              </span>
+              <span class="check-impact-tag">+20 Poin Karang</span>
+            </label>
+
+            <!-- Item 3 -->
+            <label class="check-item" for="chk-3">
+              <input type="checkbox" id="chk-3" class="custom-checkbox">
+              <span class="check-box-visual" aria-hidden="true"></span>
+              <span class="check-text-content">
+                <strong>Tidak Menginjak atau Mengambil Karang & Bintang Laut</strong>
+                <small>Membiarkan habitat alami tetap utuh untuk generasi biota laut berikutnya.</small>
+              </span>
+              <span class="check-impact-tag">+25 Poin Ekosistem</span>
+            </label>
+
+            <!-- Item 4 -->
+            <label class="check-item" for="chk-4">
+              <input type="checkbox" id="chk-4" class="custom-checkbox">
+              <span class="check-box-visual" aria-hidden="true"></span>
+              <span class="check-text-content">
+                <strong>Dukung Hasil Tangkapan Nelayan Tradisional Berkelanjutan</strong>
+                <small>Menghindari konsumsi ikan dari penangkapan pukat harimau atau bom potas.</small>
+              </span>
+              <span class="check-impact-tag">+20 Poin Bahari</span>
+            </label>
+
+            <!-- Item 5 -->
+            <label class="check-item" for="chk-5">
+              <input type="checkbox" id="chk-5" class="custom-checkbox">
+              <span class="check-box-visual" aria-hidden="true"></span>
+              <span class="check-text-content">
+                <strong>Ikut Serta Aksi Bersih Pantai atau Donasi Pohon Bakau</strong>
+                <small>Mengambil aksi nyata restorasi garis pantai secara langsung.</small>
+              </span>
+              <span class="check-impact-tag">+20 Poin Mangrove</span>
+            </label>
+          </div>
+
+          <div class="checklist-feedback">
+            <div class="feedback-badge-box">
+              <span class="feedback-icon" aria-hidden="true">🌊</span>
+              <div class="feedback-text">
+                <h4>Setiap Langkah Kecil Kamu Berdampak Besar</h4>
+                <p>Konservasi pesisir dimulai dari rumah dan keputusan konsumsi kita setiap hari.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- SECTION 3: TIM PENGEMBANG (PROFIL KELOMPOK) -->
+    <section class="team-section">
+      <div class="container">
+        <header class="section-header text-center">
+          <h2 class="section-title">Tim Pengembang Proyek</h2>
+          <p class="section-subtitle">
+            Kelompok mahasiswa di balik perancangan, pembangunan, dan dokumentasi platform Jaga Pesisir untuk Tugas UTS Pemrograman Web.
+          </p>
+        </header>
+
+        <div class="team-grid">
+
+          <!-- Anggota 1 -->
+          <article class="team-card">
+            <div class="team-body">
+              <h3 class="team-name">Pande Komang Krisna Wahyudi</h3>
+              <span class="team-nim"><i class="fa-solid fa-id-card"></i> NIM: 2515091001</span>
+              <p class="team-role-desc">
+                Bertanggung jawab atas arsitektur HTML5 semantik, struktur navigasi multi-halaman, dan integrasi antar elemen.
+              </p>
+              <div class="team-skills">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">UI/UX</span>
+                <span class="skill-tag">SEO</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Anggota 2 -->
+          <article class="team-card">
+            <div class="team-body">
+              <h3 class="team-name">[Nama Anggota 2]</h3>
+              <span class="team-nim"><i class="fa-solid fa-id-card"></i> NIM: [NIM 2]</span>
+              <p class="team-role-desc">
+                Merancang CSS Design System, palet warna samudra, animasi murni CSS, dan responsivitas layout.
+              </p>
+              <div class="team-skills">
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">Flexbox</span>
+                <span class="skill-tag">CSS Grid</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Anggota 3 -->
+          <article class="team-card">
+            <div class="team-body">
+              <h3 class="team-name">[Nama Anggota 3]</h3>
+              <span class="team-nim"><i class="fa-solid fa-id-card"></i> NIM: [NIM 3]</span>
+              <p class="team-role-desc">
+                Menyusun materi edukasi konservasi pesisir, penyelarasan indikator SDG 13 & 14, serta penyusunan artikel.
+              </p>
+              <div class="team-skills">
+                <span class="skill-tag">SDGs</span>
+                <span class="skill-tag">Copywriting</span>
+                <span class="skill-tag">Riset</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Anggota 4 -->
+          <article class="team-card">
+            <div class="team-body">
+              <h3 class="team-name">[Nama Anggota 4]</h3>
+              <span class="team-nim"><i class="fa-solid fa-id-card"></i> NIM: [NIM 4]</span>
+              <p class="team-role-desc">
+                Mengelola aset gambar dan ikon, optimasi media, serta pengujian kompatibilitas tampilan di berbagai perangkat.
+              </p>
+              <div class="team-skills">
+                <span class="skill-tag">Aset Media</span>
+                <span class="skill-tag">Testing</span>
+                <span class="skill-tag">Git</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-body">
+              <h3 class="team-name">[Nama Anggota 4]</h3>
+              <span class="team-nim"><i class="fa-solid fa-id-card"></i> NIM: [NIM 4]</span>
+              <p class="team-role-desc">
+                Mengelola aset gambar dan ikon, optimasi media, serta pengujian kompatibilitas tampilan di berbagai perangkat.
+              </p>
+              <div class="team-skills">
+                <span class="skill-tag">Aset Media</span>
+                <span class="skill-tag">Testing</span>
+                <span class="skill-tag">Git</span>
+              </div>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="references-section">
+      <div class="container">
+        <header class="section-header text-center">
+          <h2 class="section-title">Daftar Referensi & Atribusi Aset</h2>
+          <p class="section-subtitle">
+            Rujukan data ilmiah, materi edukasi, dan lisensi aset digital yang digunakan dalam pembuatan platform ini.
+          </p>
+        </header>
+
+        <div class="ref-grid">
+
+          <!-- Kartu 1: Sumber Data & Riset -->
+          <article class="ref-card">
+            <div class="ref-card-header">
+              <div class="ref-icon-box">
+                <i class="fa-solid fa-book-bookmark"></i>
+              </div>
+              <h3 class="ref-title">Sumber Data & Riset Ilmiah</h3>
+            </div>
+            <ul class="ref-list">
+              <li class="ref-item">
+                <i class="fa-solid fa-circle-check ref-bullet"></i>
+                <div class="ref-content">
+                  <strong>United Nations SDGs</strong>
+                  <p>Target & Indikator SDG 13 (Climate Action) & SDG 14 (Life Below Water)</p>
+                  <a href="https://sdgs.un.org" target="_blank" rel="noopener" class="ref-link">
+                    sdgs.un.org <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </li>
+              <li class="ref-item">
+                <i class="fa-solid fa-circle-check ref-bullet"></i>
+                <div class="ref-content">
+                  <strong>KKP RI (Kementerian Kelautan & Perikanan)</strong>
+                  <p>Data Statistik Luasan Mangrove, Terumbu Karang, & Pesisir Indonesia</p>
+                </div>
+              </li>
+              <li class="ref-item">
+                <i class="fa-solid fa-circle-check ref-bullet"></i>
+                <div class="ref-content">
+                  <strong>BRIN Oseanografi</strong>
+                  <p>Riset Konservasi Laut, Metode Bio-Rock, & Ekosistem Padang Lamun</p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Kartu 2: Aset Visual & Lisensi -->
+          <article class="ref-card">
+            <div class="ref-card-header">
+              <div class="ref-icon-box">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h3 class="ref-title">Aset Visual & Lisensi</h3>
+            </div>
+            <ul class="ref-list">
+              <li class="ref-item">
+                <i class="fa-solid fa-circle-check ref-bullet"></i>
+                <div class="ref-content">
+                  <strong>Tipografi (Google Fonts)</strong>
+                  <p>Plus Jakarta Sans & Outfit &ndash; Lisensi SIL Open Font License</p>
+                </div>
+              </li>
+              <li class="ref-item">
+                <i class="fa-solid fa-circle-check ref-bullet"></i>
+                <div class="ref-content">
+                  <strong>Font Awesome 6 Free</strong>
+                  <p>Ikonografi Vektor UI/UX &ndash; CC BY 4.0 License</p>
+                </div>
+              </li>
+              <li class="ref-item">
+                <i class="fa-solid fa-circle-check ref-bullet"></i>
+                <div class="ref-content">
+                  <strong>Fotografi (Unsplash & Pexels)</strong>
+                  <p>Aset Gambar Latar & Banner &ndash; Lisensi Bebas Komersial</p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Kartu 3: Teknologi & Standar Kode -->
+          <article class="ref-card">
+            <div class="ref-card-header">
+              <div class="ref-icon-box">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="ref-title">Teknologi & Standar Web</h3>
+            </div>
+            <ul class="ref-list">
+              <li class="ref-item">
+                <i class="fa-solid fa-circle-check ref-bullet"></i>
+                <div class="ref-content">
+                  <strong>HTML5 Semantik & CSS3</strong>
+                  <p>Pembangunan Tanpa Framework / Murni CSS3 & Flexbox/Grid</p>
+                </div>
+              </li>
+              <li class="ref-item">
+                <i class="fa-solid fa-circle-check ref-bullet"></i>
+                <div class="ref-content">
+                  <strong>W3C Validation Standards</strong>
+                  <p>Aksesibilitas Web (ARIA Tag) & Struktur Kode Bersih</p>
+                </div>
+              </li>
+              <li class="ref-item">
+                <i class="fa-solid fa-circle-check ref-bullet"></i>
+                <div class="ref-content">
+                  <strong>GitHub Pages & Git</strong>
+                  <p>Deployment Repositori Publik & Kontrol Versi Proyek</p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col-main">
+        <a href="index.html" class="brand-logo footer-logo" aria-label="Beranda Jaga Pesisir">
+          <img src="images/logo-icon.png" alt="Logo Jaga Pesisir" class="logo-icon">
+          <span class="logo-text">Jaga<strong>Pesisir</strong></span>
+        </a>
+        <p class="footer-tagline">
+          Inisiatif edukasi dan advokasi restorasi wilayah pesisir serta ekosistem kelautan nusantara demi mewujudkan cita-cita Tujuan Pembangunan Berkelanjutan (SDGs).
+        </p>
+        <div class="sdg-mini-badges">
+          <span class="mini-sdg sdg-13-tag">SDG 13 Aksi Iklim</span>
+          <span class="mini-sdg sdg-14-tag">SDG 14 Ekosistem Lautan</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigasi Utama</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="edukasi.html">Krisis Pesisir & SDG</a></li>
+          <li><a href="panduan.html">Program Konservasi</a></li>
+          <li><a href="ekspedisi.html">Jelajah Parallax & Carousel</a></li>
+          <li><a href="tentang.html">Aksi Mandiri & Profil</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Kontak & Proyek</h4>
+
+        <p class="footer-contact-item">
+          <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+          Kawasan Bahari Terpadu, Indonesia
+        </p>
+
+        <p class="footer-contact-item">
+          <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+          kontak@jagapesisir.org
+        </p>
+
+        <div class="social-links">
+          <a href="#" target="_blank" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" target="_blank" class="social-btn" aria-label="X (Twitter)"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Jaga Pesisir &bull; Proyek UTS Pemrograman Web</p>
+        <p class="footer-subtext">Dikembangkan oleh Kelompok 3 &bull; Murni HTML5 & CSS3</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
