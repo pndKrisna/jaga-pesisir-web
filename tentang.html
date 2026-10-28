@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Jaga Pesisir - Kalkulator Aksi Mandiri & Profil Pengembang Proyek UTS Pemrograman Web.">
   <title>Jaga Pesisir | Aksi Mandiri & Profil Pengembang</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- ==============================================
-       HEADER & NAVIGASI
-       ============================================== -->
   <header class="site-header">
     <div class="container header-container">
       <a href="index.html" class="brand-logo" aria-label="Beranda Jaga Pesisir">
@@ -21,7 +20,6 @@
         <span class="logo-text">Jaga<strong>Pesisir</strong></span>
       </a>
 
-      <!-- Checkbox Hack untuk Navigasi Mobile Bebas JS -->
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka navigasi menu">
       <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
         <span class="hamburger-bar"></span>
@@ -34,7 +32,7 @@
           <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
           <li class="nav-item"><a href="edukasi.html" class="nav-link">Krisis & SDG</a></li>
           <li class="nav-item"><a href="panduan.html" class="nav-link">Pilar Konservasi</a></li>
-          <li class="nav-item"><a href="ekspedisi.html" class="nav-link">Jelajah & Carousel</a></li>
+          <li class="nav-item"><a href="ekspedisi.html" class="nav-link">Ekspedisi Bahari</a></li>
           <li class="nav-item"><a href="tentang.html" class="nav-link active">Aksi Mandiri & Profil</a></li>
         </ul>
       </nav>
@@ -43,8 +41,8 @@
 
   <main>
 
-    <!-- SECTION 6: INTERAKTIF CSS MURNI (Checklist Aksi Mandiri) -->
-    <section id="interaktif" class="interactive-section" style="padding-top: 60px;">
+    <!-- SECTION 1: CHECKLIST AKSI MANDIRI -->
+    <section class="checklist-section" style="padding-top: 60px;">
       <div class="container">
         <header class="section-header text-center">
           <h2 class="section-title">Kalkulator Kebiasaan Bahari Kamu</h2>
@@ -58,7 +56,7 @@
           <div class="checklist-form">
             <!-- Item 1 -->
             <label class="check-item" for="chk-1">
-              <input type="checkbox" id="chk-1" class="custom-checkbox">
+              <input type="checkbox" id="chk-1" class="check-input">
               <span class="check-box-visual" aria-hidden="true"></span>
               <span class="check-text-content">
                 <strong>Gunakan Tas Belanja & Tumbler Pribadi</strong>
@@ -69,7 +67,7 @@
 
             <!-- Item 2 -->
             <label class="check-item" for="chk-2">
-              <input type="checkbox" id="chk-2" class="custom-checkbox">
+              <input type="checkbox" id="chk-2" class="check-input">
               <span class="check-box-visual" aria-hidden="true"></span>
               <span class="check-text-content">
                 <strong>Pilih Tabir Surya Ramah Karang (Oxybenzone-Free)</strong>
@@ -80,7 +78,7 @@
 
             <!-- Item 3 -->
             <label class="check-item" for="chk-3">
-              <input type="checkbox" id="chk-3" class="custom-checkbox">
+              <input type="checkbox" id="chk-3" class="check-input">
               <span class="check-box-visual" aria-hidden="true"></span>
               <span class="check-text-content">
                 <strong>Tidak Menginjak atau Mengambil Karang & Bintang Laut</strong>
@@ -91,7 +89,7 @@
 
             <!-- Item 4 -->
             <label class="check-item" for="chk-4">
-              <input type="checkbox" id="chk-4" class="custom-checkbox">
+              <input type="checkbox" id="chk-4" class="check-input">
               <span class="check-box-visual" aria-hidden="true"></span>
               <span class="check-text-content">
                 <strong>Dukung Hasil Tangkapan Nelayan Tradisional Berkelanjutan</strong>
@@ -102,7 +100,7 @@
 
             <!-- Item 5 -->
             <label class="check-item" for="chk-5">
-              <input type="checkbox" id="chk-5" class="custom-checkbox">
+              <input type="checkbox" id="chk-5" class="check-input">
               <span class="check-box-visual" aria-hidden="true"></span>
               <span class="check-text-content">
                 <strong>Ikut Serta Aksi Bersih Pantai atau Donasi Pohon Bakau</strong>
@@ -125,7 +123,7 @@
       </div>
     </section>
 
-<!-- SECTION 3: TIM PENGEMBANG (PROFIL KELOMPOK) -->
+    <!-- SECTION 2: PROFIL KELOMPOK -->
     <section class="team-section">
       <div class="container">
         <header class="section-header text-center">
@@ -201,10 +199,11 @@
             </div>
           </article>
 
+          <!-- Anggota 5 -->
           <article class="team-card">
             <div class="team-body">
-              <h3 class="team-name">[Nama Anggota 4]</h3>
-              <span class="team-nim"><i class="fa-solid fa-id-card"></i> NIM: [NIM 4]</span>
+              <h3 class="team-name">[Nama Anggota 5]</h3>
+              <span class="team-nim"><i class="fa-solid fa-id-card"></i> NIM: [NIM 5]</span>
               <p class="team-role-desc">
                 Mengelola aset gambar dan ikon, optimasi media, serta pengujian kompatibilitas tampilan di berbagai perangkat.
               </p>
@@ -220,6 +219,7 @@
       </div>
     </section>
 
+    <!-- SECTION 3: REFRENSI -->
     <section class="references-section">
       <div class="container">
         <header class="section-header text-center">

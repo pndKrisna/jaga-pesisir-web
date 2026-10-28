@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jaga Pesisir - Jelajah Parallax & Infinite Carousel 5 Zona Konservasi.">
-  <title>Jaga Pesisir | Jelajah Parallax & Carousel</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Jaga Pesisir - Zona Kedalaman Pesisir & 5 Zona Konservasi.">
+  <title>Jaga Pesisir | Jelajah 3 Zona Kedalaman Pesisir & 5 Zona Konservasi</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <header class="site-header">
@@ -18,7 +20,6 @@
         <span class="logo-text">Jaga<strong>Pesisir</strong></span>
       </a>
 
-      <!-- Checkbox Hack untuk Navigasi Mobile Bebas JS -->
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka navigasi menu">
       <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
         <span class="hamburger-bar"></span>
@@ -31,7 +32,7 @@
           <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
           <li class="nav-item"><a href="edukasi.html" class="nav-link">Krisis & SDG</a></li>
           <li class="nav-item"><a href="panduan.html" class="nav-link">Pilar Konservasi</a></li>
-          <li class="nav-item"><a href="ekspedisi.html" class="nav-link active">Jelajah & Carousel</a></li>
+          <li class="nav-item"><a href="ekspedisi.html" class="nav-link active">Ekspedisi Bahari</a></li>
           <li class="nav-item"><a href="tentang.html" class="nav-link">Aksi Mandiri & Profil</a></li>
         </ul>
       </nav>
@@ -40,23 +41,21 @@
 
   <main>
 
-    <!-- SECTION PARALLAX 1: JELAJAH KEDALAMAN PESISIR (Murni CSS Multi-Speed Parallax) -->
-    <section id="jelajah" class="parallax-experience-section" aria-label="Eksplorasi Kedalaman Parallax" style="padding-top: 60px;">
+    <!-- SECTION 1: JELAJAH KEDALAMAN PESISIR -->
+    <section id="jelajah" class="depth-explorer-section" aria-label="Eksplorasi Kedalaman Pesisir" style="padding-top: 60px;">
 
-      <div class="parallax-deep-ocean-bg" aria-hidden="true"></div>
-      <!-- Lapisan Depan: Konten Interaktif Parallax (Bergerak Lebih Cepat Saat Scroll) -->
-      <div class="container parallax-experience-container">
+      <div class="depth-explorer-bg" aria-hidden="true"></div>
+      <div class="container depth-explorer-container">
         
-        <header class="parallax-header text-center">
-          <h2 class="parallax-exp-title">
+        <header class="depth-explorer-header text-center">
+          <h2 class="depth-explorer-title">
             Jelajah Zona Kedalaman <span class="gradient-aqua">Pesisir Nusantara</span>
           </h2>
-          <p class="parallax-exp-subtitle">
+          <p class="depth-explorer-subtitle">
             Gulir layar Anda ke atas dan ke bawah: perhatikan bagaimana sinar matahari, penyu, kawanan ikan, dan kartu kedalaman bergerak pada kecepatan yang berbeda!
           </p>
         </header>
 
-        <!-- Kartu Tingkatan Kedalaman Parallax (Multi-Speed Cards) -->
         <div class="depth-cards-grid">
           
           <!-- Tier 1 -->
@@ -112,29 +111,27 @@
 
         </div>
 
-        <!-- Parallax Quote Banner di Bagian Bawah Zona -->
-        <div class="parallax-quote-box text-center">
-          <blockquote class="parallax-quote">
+        <div class="depth-quote-box text-center">
+          <blockquote class="depth-quote">
             “Setiap meter kedalaman laut menyimpan benteng pertahanan alami bumi dari krisis iklim.”
           </blockquote>
-          <div class="parallax-pills">
-            <span class="parallax-pill"><i class="fa-solid fa-water"></i>&nbsp;&nbsp;Meredam Ombak Ekstrem</span>
-            <span class="parallax-pill"><i class="fa-solid fa-seedling"></i>&nbsp;&nbsp;Menyerap Karbon Biru</span>
-            <span class="parallax-pill"><i class="fa-solid fa-fish-fins"></i>&nbsp;&nbsp;Rumah Biota Laut</span>
+          <div class="depth-quote-pills">
+            <span class="depth-quote-pill"><i class="fa-solid fa-water"></i>&nbsp;&nbsp;Meredam Ombak Ekstrem</span>
+            <span class="depth-quote-pill"><i class="fa-solid fa-seedling"></i>&nbsp;&nbsp;Menyerap Karbon Biru</span>
+            <span class="depth-quote-pill"><i class="fa-solid fa-fish-fins"></i>&nbsp;&nbsp;Rumah Biota Laut</span>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- SECTION 5: INFINITE CAROUSEL ANIMATION (EKSPEDISI 5 ZONA KONSERVASI) -->
+    <!-- SECTION 2: EKSPEDISI 5 ZONA KONSERVASI -->
     <section id="carousel" class="infinite-carousel-section" aria-label="Galeri Infinite Carousel Konservasi">
       <div class="container carousel-intro-container text-center">
         <h2 class="section-title" style="color: white;">Jelajah 5 Zona Konservasi Nusantara</h2>
       </div>
 
-      <!-- Container Infinite Carousel dengan Edge Fade Mask -->
-      <div class="carousel-outer-wrapper">
+      <div class="carousel-viewport">
         <div class="carousel-track">
           
           <!-- SET 1 (5 Zona Ekspedisi) -->
@@ -143,21 +140,21 @@
               <span class="exp-stop-badge">ZONA 01</span>
               <span class="exp-zone-tag">Pantura Jawa</span>
             </div>
-            <div class="exp-visual-icon" aria-hidden="true">
+            <div class="carousel-card-icon" aria-hidden="true">
               <i class="fa-solid fa-seedling"></i>
             </div>
             <h3 class="exp-title">Benteng Mangrove Pesisir</h3>
             <p class="exp-desc">
               Restorasi sabuk hijau bakau di Demak dan Brebes untuk menahan penurunan tanah dan abrasi ombak pasang.
             </p>
-            <div class="exp-metrics">
-              <div class="metric-item">
-                <span class="metric-val">1.450 Ha</span>
-                <span class="metric-lbl">Bakau Ditanam</span>
+            <div class="carousel-card-metrics">
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">1.450 Ha</span>
+                <span class="carousel-metric-label">Bakau Ditanam</span>
               </div>
-              <div class="metric-item">
-                <span class="metric-val">12 Desa</span>
-                <span class="metric-lbl">Terselamatkan</span>
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">12 Desa</span>
+                <span class="carousel-metric-label">Terselamatkan</span>
               </div>
             </div>
             <div class="exp-footer">
@@ -171,21 +168,21 @@
               <span class="exp-stop-badge">ZONA 02</span>
               <span class="exp-zone-tag">Kepri & Natuna</span>
             </div>
-            <div class="exp-visual-icon" aria-hidden="true">
+            <div class="carousel-card-icon" aria-hidden="true">
               <i class="fa-solid fa-leaf"></i>
             </div>
             <h3 class="exp-title">Suaka Padang Lamun</h3>
             <p class="exp-desc">
               Perlindungan padang lamun terluas habitat mamalia Dugong dan penyimpan karbon biru alami 35x lipat.
             </p>
-            <div class="exp-metrics">
-              <div class="metric-item">
-                <span class="metric-val">2.800 Ha</span>
-                <span class="metric-lbl">Lamun Terjaga</span>
+            <div class="carousel-card-metrics">
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">2.800 Ha</span>
+                <span class="carousel-metric-label">Lamun Terjaga</span>
               </div>
-              <div class="metric-item">
-                <span class="metric-val">45.000 Ton</span>
-                <span class="metric-lbl">Karbon Terkunci</span>
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">45.000 Ton</span>
+                <span class="carousel-metric-label">Karbon Terkunci</span>
               </div>
             </div>
             <div class="exp-footer">
@@ -199,21 +196,21 @@
               <span class="exp-stop-badge">ZONA 03</span>
               <span class="exp-zone-tag">Wakatobi</span>
             </div>
-            <div class="exp-visual-icon" aria-hidden="true">
+            <div class="carousel-card-icon" aria-hidden="true">
               <i class="fa-solid fa-fish-fins"></i>
             </div>
             <h3 class="exp-title">Terumbu Karang Bio-Rock</h3>
             <p class="exp-desc">
               Akresi mineral bertenaga surya mempercepat regenerasi terumbu karang bercabang 5x lebih cepat.
             </p>
-            <div class="exp-metrics">
-              <div class="metric-item">
-                <span class="metric-val">340 Titik</span>
-                <span class="metric-lbl">Bio-rock Aktif</span>
+            <div class="carousel-card-metrics">
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">340 Titik</span>
+                <span class="carousel-metric-label">Bio-rock Aktif</span>
               </div>
-              <div class="metric-item">
-                <span class="metric-val">89%</span>
-                <span class="metric-lbl">Tingkat Bertahan</span>
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">89%</span>
+                <span class="carousel-metric-label">Tingkat Bertahan</span>
               </div>
             </div>
             <div class="exp-footer">
@@ -227,21 +224,21 @@
               <span class="exp-stop-badge">ZONA 04</span>
               <span class="exp-zone-tag">Raja Ampat</span>
             </div>
-            <div class="exp-visual-icon" aria-hidden="true">
+            <div class="carousel-card-icon" aria-hidden="true">
               <i class="fa-solid fa-shield-halved"></i>
             </div>
             <h3 class="exp-title">Konservasi Adat Sasi Laut</h3>
             <p class="exp-desc">
               Penerapan kearifan leluhur melarang eksploitasi pada musim pemijahan, melindungi 75% spesies karang dunia.
             </p>
-            <div class="exp-metrics">
-              <div class="metric-item">
-                <span class="metric-val">1,3 Juta Ha</span>
-                <span class="metric-lbl">Zona Adat</span>
+            <div class="carousel-card-metrics">
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">1,3 Juta Ha</span>
+                <span class="carousel-metric-label">Zona Adat</span>
               </div>
-              <div class="metric-item">
-                <span class="metric-val">553 Spesies</span>
-                <span class="metric-lbl">Karang Terdata</span>
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">553 Spesies</span>
+                <span class="carousel-metric-label">Karang Terdata</span>
               </div>
             </div>
             <div class="exp-footer">
@@ -255,21 +252,21 @@
               <span class="exp-stop-badge">ZONA 05</span>
               <span class="exp-zone-tag">Laut Banda</span>
             </div>
-            <div class="exp-visual-icon" aria-hidden="true">
+            <div class="carousel-card-icon" aria-hidden="true">
               <i class="fa-solid fa-water"></i>
             </div>
             <h3 class="exp-title">Koridor Migrasi Cetacea</h3>
             <p class="exp-desc">
               Pengawasan rute migrasi paus biru dan hiu martil menuju target perlindungan kawasan perairan 30x30.
             </p>
-            <div class="exp-metrics">
-              <div class="metric-item">
-                <span class="metric-val">28,9 Juta Ha</span>
-                <span class="metric-lbl">Total MPA RI</span>
+            <div class="carousel-card-metrics">
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">28,9 Juta Ha</span>
+                <span class="carousel-metric-label">Total MPA RI</span>
               </div>
-              <div class="metric-item">
-                <span class="metric-val">Target 2030</span>
-                <span class="metric-lbl">30% Lautan</span>
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">Target 2030</span>
+                <span class="carousel-metric-label">30% Lautan</span>
               </div>
             </div>
             <div class="exp-footer">
@@ -278,27 +275,27 @@
             </div>
           </article>
 
-          <!-- SET 2 (DUPLIKASI IDENTIK UNTUK INFINITE SEAMLESS LOOP) -->
+          <!-- SET 2 (DUPLIKAT) -->
           <article class="carousel-card card-pantura" aria-hidden="true">
             <div class="expedition-card-top">
               <span class="exp-stop-badge">ZONA 01</span>
               <span class="exp-zone-tag">Pantura Jawa</span>
             </div>
-            <div class="exp-visual-icon">
+            <div class="carousel-card-icon">
               <i class="fa-solid fa-seedling"></i>
             </div>
             <h3 class="exp-title">Benteng Mangrove Pesisir</h3>
             <p class="exp-desc">
               Restorasi sabuk hijau bakau di Demak dan Brebes untuk menahan penurunan tanah dan abrasi ombak pasang.
             </p>
-            <div class="exp-metrics">
-              <div class="metric-item">
-                <span class="metric-val">1.450 Ha</span>
-                <span class="metric-lbl">Bakau Ditanam</span>
+            <div class="carousel-card-metrics">
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">1.450 Ha</span>
+                <span class="carousel-metric-label">Bakau Ditanam</span>
               </div>
-              <div class="metric-item">
-                <span class="metric-val">12 Desa</span>
-                <span class="metric-lbl">Terselamatkan</span>
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">12 Desa</span>
+                <span class="carousel-metric-label">Terselamatkan</span>
               </div>
             </div>
             <div class="exp-footer">
@@ -312,21 +309,21 @@
               <span class="exp-stop-badge">ZONA 02</span>
               <span class="exp-zone-tag">Kepri & Natuna</span>
             </div>
-            <div class="exp-visual-icon">
+            <div class="carousel-card-icon">
               <i class="fa-solid fa-leaf"></i>
             </div>
             <h3 class="exp-title">Suaka Padang Lamun</h3>
             <p class="exp-desc">
               Perlindungan padang lamun terluas habitat mamalia Dugong dan penyimpan karbon biru alami 35x lipat.
             </p>
-            <div class="exp-metrics">
-              <div class="metric-item">
-                <span class="metric-val">2.800 Ha</span>
-                <span class="metric-lbl">Lamun Terjaga</span>
+            <div class="carousel-card-metrics">
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">2.800 Ha</span>
+                <span class="carousel-metric-label">Lamun Terjaga</span>
               </div>
-              <div class="metric-item">
-                <span class="metric-val">45.000 Ton</span>
-                <span class="metric-lbl">Karbon Terkunci</span>
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">45.000 Ton</span>
+                <span class="carousel-metric-label">Karbon Terkunci</span>
               </div>
             </div>
             <div class="exp-footer">
@@ -340,21 +337,21 @@
               <span class="exp-stop-badge">ZONA 03</span>
               <span class="exp-zone-tag">Wakatobi</span>
             </div>
-            <div class="exp-visual-icon">
+            <div class="carousel-card-icon">
               <i class="fa-solid fa-fish-fins"></i>
             </div>
             <h3 class="exp-title">Terumbu Karang Bio-Rock</h3>
             <p class="exp-desc">
               Akresi mineral bertenaga surya mempercepat regenerasi terumbu karang bercabang 5x lebih cepat.
             </p>
-            <div class="exp-metrics">
-              <div class="metric-item">
-                <span class="metric-val">340 Titik</span>
-                <span class="metric-lbl">Bio-rock Aktif</span>
+            <div class="carousel-card-metrics">
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">340 Titik</span>
+                <span class="carousel-metric-label">Bio-rock Aktif</span>
               </div>
-              <div class="metric-item">
-                <span class="metric-val">89%</span>
-                <span class="metric-lbl">Tingkat Bertahan</span>
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">89%</span>
+                <span class="carousel-metric-label">Tingkat Bertahan</span>
               </div>
             </div>
             <div class="exp-footer">
@@ -368,21 +365,21 @@
               <span class="exp-stop-badge">ZONA 04</span>
               <span class="exp-zone-tag">Raja Ampat</span>
             </div>
-            <div class="exp-visual-icon">
+            <div class="carousel-card-icon">
               <i class="fa-solid fa-shield-halved"></i>
             </div>
             <h3 class="exp-title">Konservasi Adat Sasi Laut</h3>
             <p class="exp-desc">
               Penerapan kearifan leluhur melarang eksploitasi pada musim pemijahan, melindungi 75% spesies karang dunia.
             </p>
-            <div class="exp-metrics">
-              <div class="metric-item">
-                <span class="metric-val">1,3 Juta Ha</span>
-                <span class="metric-lbl">Zona Adat</span>
+            <div class="carousel-card-metrics">
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">1,3 Juta Ha</span>
+                <span class="carousel-metric-label">Zona Adat</span>
               </div>
-              <div class="metric-item">
-                <span class="metric-val">553 Spesies</span>
-                <span class="metric-lbl">Karang Terdata</span>
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">553 Spesies</span>
+                <span class="carousel-metric-label">Karang Terdata</span>
               </div>
             </div>
             <div class="exp-footer">
@@ -396,21 +393,21 @@
               <span class="exp-stop-badge">ZONA 05</span>
               <span class="exp-zone-tag">Laut Banda</span>
             </div>
-            <div class="exp-visual-icon">
+            <div class="carousel-card-icon">
               <i class="fa-solid fa-water"></i>
             </div>
             <h3 class="exp-title">Koridor Migrasi Cetacea</h3>
             <p class="exp-desc">
               Pengawasan rute migrasi paus biru dan hiu martil menuju target perlindungan kawasan perairan 30x30.
             </p>
-            <div class="exp-metrics">
-              <div class="metric-item">
-                <span class="metric-val">28,9 Juta Ha</span>
-                <span class="metric-lbl">Total MPA RI</span>
+            <div class="carousel-card-metrics">
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">28,9 Juta Ha</span>
+                <span class="carousel-metric-label">Total MPA RI</span>
               </div>
-              <div class="metric-item">
-                <span class="metric-val">Target 2030</span>
-                <span class="metric-lbl">30% Lautan</span>
+              <div class="carousel-metric">
+                <span class="carousel-metric-value">Target 2030</span>
+                <span class="carousel-metric-label">30% Lautan</span>
               </div>
             </div>
             <div class="exp-footer">

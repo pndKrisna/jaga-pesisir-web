@@ -1,34 +1,21 @@
-/* ==========================================================================
-   JAGA PESISIR - STYLESHEET
-   Konservasi Ekosistem Pesisir & Laut Indonesia (SDG 13 & SDG 14)
-   Aturan: Murni CSS3, Flexbox & Grid, Animasi CSS3, Tanpa JS, Tanpa Framework
-   Catatan: Dilarang menggunakan warna hitam pekat (#000000)
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. CSS VARIABLES (Sistem Desain & Palet Warna Samudra)
-   -------------------------------------------------------------------------- */
 :root {
-  /* Palet Warna Biru Laut & Samudra (Bebas dari #000000) */
-  --color-marine-950: #07192c;   /* Navy samudra terdalam (pengganti hitam) */
-  --color-marine-900: #0a2540;   /* Biru bahari malam */
-  --color-marine-850: #0d3154;   /* Navy biru permukaan dalam */
-  --color-marine-800: #123e68;   /* Biru terumbu dalam */
-  --color-marine-700: #1a5286;   /* Biru laut lepas */
-  --color-marine-600: #256ba8;   /* Biru ombak */
-  --color-marine-500: #0284c7;   /* Biru langit laut */
-  --color-marine-400: #38bdf8;   /* Biru riak ombak */
-  --color-marine-100: #e0f2fe;   /* Busa laut sangat muda */
-  --color-marine-50:  #f0f9ff;   /* Putih tint biru samudra */
+  --color-marine-950: #07192c;
+  --color-marine-900: #0a2540;
+  --color-marine-850: #0d3154;
+  --color-marine-800: #123e68;
+  --color-marine-700: #1a5286;
+  --color-marine-600: #256ba8;
+  --color-marine-500: #0284c7;
+  --color-marine-400: #38bdf8;
+  --color-marine-100: #e0f2fe;
+  --color-marine-50:  #f0f9ff;
 
-  /* Palet Hijau Mangrove (Konservasi & SDG 13) */
   --color-mangrove-800: #064e3b;
   --color-mangrove-600: #059669;
   --color-mangrove-500: #10b981;
   --color-mangrove-100: #d1fae5;
   --color-mangrove-50:  #ecfdf5;
 
-  /* Palet Terumbu Karang & Aksen (SDG 14 & Kehangatan Pesisir) */
   --color-coral-600: #dc2626;
   --color-coral-500: #ea580c;
   --color-coral-400: #f97316;
@@ -36,26 +23,22 @@
   --color-sand-100:  #fef3c7;
   --color-sand-50:   #fffbeb;
 
-  /* Teks & Latar Belakang (Non-Black Tinted) */
-  --color-text-main:    #0f2842; /* Teks utama: Biru navy pekat elegan */
-  --color-text-muted:   #2e4964; /* Teks sekunder: Biru slate laut */
-  --color-text-subtle:  #53718e; /* Teks keterangan kecil */
-  --color-bg-light:     #f4f9fd; /* Background lembut */
-  --color-bg-white:     #ffffff; /* Putih bersih */
-  --color-border:       #d2e5f5; /* Garis batas laut tipis */
-  --color-border-hover: #7dd3fc; /* Garis batas saat hover */
+  --color-text-main:    #0f2842;
+  --color-text-muted:   #2e4964;
+  --color-text-subtle:  #53718e;
+  --color-bg-light:     #f4f9fd;
+  --color-bg-white:     #ffffff;
+  --color-border:       #d2e5f5;
+  --color-border-hover: #7dd3fc;
 
-  /* Shadow Bernuansa Biru Samudra (Tanpa #000000) */
   --shadow-sm:  0 2px 8px rgba(10, 37, 64, 0.06);
   --shadow-md:  0 6px 20px rgba(10, 37, 64, 0.08);
   --shadow-lg:  0 12px 35px rgba(10, 37, 64, 0.12);
   --shadow-glow: 0 0 25px rgba(2, 132, 199, 0.25);
 
-  /* Tipografi */
   --font-primary: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
 
-  /* Layout Container */
   --container-max: 1240px;
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -64,9 +47,7 @@
   --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* --------------------------------------------------------------------------
-   2. RESET & DASAR ELEMEN
-   -------------------------------------------------------------------------- */
+/* Reset & elemen dasar */
 *,
 *::before,
 *::after {
@@ -90,7 +71,8 @@ body {
   overflow-x: hidden;
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -105,13 +87,14 @@ ul {
   list-style: none;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
 }
 
-/* --------------------------------------------------------------------------
-   3. STRUKTUR CONTAINER & UTILITY
-   -------------------------------------------------------------------------- */
+/* Layout & utilitas */
 .container {
   width: 100%;
   max-width: var(--container-max);
@@ -148,9 +131,7 @@ button, input, select, textarea {
   line-height: 1.7;
 }
 
-/* --------------------------------------------------------------------------
-   4. HEADER & NAVIGASI (Murni CSS & Checkbox Toggle)
-   -------------------------------------------------------------------------- */
+/* Header & navigasi */
 .site-header {
   position: sticky;
   top: 0;
@@ -202,7 +183,7 @@ button, input, select, textarea {
   font-weight: 800;
 }
 
-/* Checkbox Toggle Navigation untuk Mobile (Bebas JS) */
+/* Menu mobile: toggle via checkbox */
 .nav-toggle {
   display: none;
 }
@@ -241,11 +222,10 @@ button, input, select, textarea {
   position: relative;
   color: var(--color-text-main);
   text-decoration: none;
-  font-weight: 600; /* Ketebalan dibuat tetap 600 agar lebar teks tidak berubah */
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
-/* 2. Garis Indikator Bawah (Kondisi Awal) */
 .nav-link::after {
   content: "";
   position: absolute;
@@ -258,20 +238,16 @@ button, input, select, textarea {
   transition: width 0.3s ease;
 }
 
-/* 3. Tampilan saat di-Hover ATAU Aktif (Hanya ubah WARNA) */
 .nav-link:hover,
 .nav-link.active {
   color: var(--color-marine-600);
-  /* font-weight dihapus di sini agar tidak memicu dorongan ke menu lain */
 }
 
-/* 4. Garis Bawah Memanjang saat di-Hover ATAU Aktif */
 .nav-link:hover::after,
 .nav-link.active::after {
   width: 100%;
 }
 
-/* 5. Tampilan Mobile (Layar <= 1024px) */
 @media (max-width: 1024px) {
   .nav-link:hover,
   .nav-link.active {
@@ -288,109 +264,7 @@ button, input, select, textarea {
   }
 }
 
-/* --------------------------------------------------------------------------
-   5. BUTTONS & PILLS
-   -------------------------------------------------------------------------- */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 14px 28px;
-  border-radius: var(--radius-full);
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, var(--color-marine-600) 0%, var(--color-marine-500) 100%);
-  color: var(--color-bg-white);
-  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.35);
-}
-
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(2, 132, 199, 0.48);
-  background: linear-gradient(135deg, var(--color-marine-700) 0%, var(--color-marine-600) 100%);
-}
-
-.btn-secondary {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: var(--color-marine-900);
-  border: 2px solid var(--color-border);
-  box-shadow: var(--shadow-sm);
-}
-
-.btn-secondary:hover {
-  background-color: var(--color-marine-100);
-  border-color: var(--color-marine-400);
-  color: var(--color-marine-600);
-  transform: translateY(-2px);
-}
-
-.btn-arrow {
-  width: 18px;
-  height: 18px;
-  transition: transform 0.25s ease;
-}
-
-.btn:hover .btn-arrow {
-  transform: translateX(4px);
-}
-
-/* Pill Badges */
-.sdg-pill-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 22px;
-}
-
-.badge-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 14px;
-  border-radius: var(--radius-full);
-  font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.sdg-13-pill {
-  background-color: var(--color-mangrove-100);
-  color: var(--color-mangrove-800);
-  border: 1px solid rgba(16, 185, 129, 0.35);
-}
-
-.sdg-14-pill {
-  background-color: var(--color-marine-100);
-  color: var(--color-marine-700);
-  border: 1px solid rgba(2, 132, 199, 0.35);
-}
-
-.badge-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: currentColor;
-  position: relative;
-  display: inline-block;
-  animation: pulseGlow 2s infinite ease-in-out;
-}
-
-@keyframes pulseGlow {
-  0% { transform: scale(0.95); opacity: 0.7; }
-  50% { transform: scale(1.3); opacity: 1; }
-  100% { transform: scale(0.95); opacity: 0.7; }
-}
-
-/* --------------------------------------------------------------------------
-   6. HERO SECTION DENGAN EFEK ANIMASI VISUAL CSS
-   -------------------------------------------------------------------------- */
+/* Hero */
 .hero-section {
   position: relative;
   padding-top: 60px;
@@ -430,19 +304,12 @@ button, input, select, textarea {
   max-width: 580px;
 }
 
-.hero-cta-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 40px;
-}
-
-.hero-trust {
+.hero-focus {
   padding-top: 20px;
   border-top: 1px solid rgba(18, 62, 104, 0.12);
 }
 
-.trust-label {
+.hero-focus-label {
   display: block;
   font-size: 0.8125rem;
   font-weight: 700;
@@ -452,13 +319,13 @@ button, input, select, textarea {
   margin-bottom: 10px;
 }
 
-.trust-tags {
+.hero-focus-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.tag-item {
+.hero-focus-tag {
   display: inline-block;
   padding: 5px 12px;
   font-size: 0.8125rem;
@@ -469,7 +336,6 @@ button, input, select, textarea {
   border-radius: var(--radius-sm);
 }
 
-/* Styling Kartu Gambar Hero */
 .hero-image-card {
   position: relative;
   max-width: 480px;
@@ -483,11 +349,10 @@ button, input, select, textarea {
 .hero-img {
   width: 100%;
   height: 420px;
-  object-fit: cover; /* Menjaga proporsi gambar agar tidak terdistorsi/gepeng */
+  object-fit: cover;
   display: block;
 }
 
-/* Floating Badges Animasi Mengapung */
 .floating-badge {
   position: absolute;
   z-index: 10;
@@ -516,7 +381,6 @@ button, input, select, textarea {
   animation: floatBadgeB 6s ease-in-out infinite alternate;
 }
 
-
 .badge-icon-wrap {
   display: flex;
   align-items: center;
@@ -543,24 +407,7 @@ button, input, select, textarea {
   font-weight: 600;
 }
 
-/* Hero Bottom Wave Divider */
-.section-wave-divider {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  line-height: 0;
-  color: var(--color-bg-white);
-}
-
-.section-wave-divider svg {
-  width: 100%;
-  height: 48px;
-}
-
-/* --------------------------------------------------------------------------
-   7. STATISTIK & FAKTA CEPAT
-   -------------------------------------------------------------------------- */
+/* Statistik */
 .stats-section {
   background-color: var(--color-bg-white);
   padding: 40px 0 60px;
@@ -617,9 +464,7 @@ button, input, select, textarea {
   line-height: 1.45;
 }
 
-/* --------------------------------------------------------------------------
-   8. KRISIS & ANCAMAN PESISIR
-   -------------------------------------------------------------------------- */
+/* Ancaman pesisir */
 .threats-section {
   padding: 100px 0;
   background-color: var(--color-bg-light);
@@ -649,7 +494,7 @@ button, input, select, textarea {
   transition: var(--transition);
   position: relative;
   overflow: hidden;
-  padding: 0; /* Diubah dari padding lama */
+  padding: 0;
 }
 
 .threat-card::before {
@@ -675,10 +520,10 @@ button, input, select, textarea {
   opacity: 1;
 }
 
-.threat-card-inner {
+.threat-card-body {
   display: flex;
   flex-direction: column;
-  padding: 20px; /* Ditambahkan agar teks ada jaraknya */
+  padding: 20px;
 }
 
 .threat-badge {
@@ -704,7 +549,7 @@ button, input, select, textarea {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  margin-bottom: 0; 
+  margin-bottom: 0;
   transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -758,9 +603,7 @@ button, input, select, textarea {
   color: var(--color-marine-900);
 }
 
-/* --------------------------------------------------------------------------
-   9. PROGRAM AKSI KONSERVASI (SCROLL OVERLAPPING CARDS EFFECT)
-   -------------------------------------------------------------------------- */
+/* Pilar konservasi */
 .programs-section.overlapping-section {
   padding: 100px 0 140px;
   background-color: var(--color-bg-light);
@@ -777,7 +620,6 @@ button, input, select, textarea {
   position: relative;
 }
 
-/* Kartu Overlapping Sticky Deck (Scroll Overlapping Cards) */
 .stack-card {
   position: sticky;
   top: 110px;
@@ -791,26 +633,25 @@ button, input, select, textarea {
   overflow: hidden;
 }
 
-/* Staggered Sticky Offset & Layering */
-.stack-card-1 {
+.stack-card-mangrove {
   top: 100px;
   z-index: 1;
   border-top: 5px solid var(--color-mangrove-600);
 }
 
-.stack-card-2 {
+.stack-card-coral {
   top: 130px;
   z-index: 2;
   border-top: 5px solid var(--color-marine-500);
 }
 
-.stack-card-3 {
+.stack-card-cleanup {
   top: 160px;
   z-index: 3;
   border-top: 5px solid var(--color-sand-500);
 }
 
-.stack-card-4 {
+.stack-card-community {
   top: 190px;
   z-index: 4;
   border-top: 5px solid #6366f1;
@@ -930,14 +771,14 @@ button, input, select, textarea {
   background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);
 }
 
-.stack-icon-big {
+.stack-visual-icon {
   font-size: 3.5rem;
   margin-bottom: 12px;
   filter: drop-shadow(0 4px 8px rgba(7, 25, 44, 0.2));
   transition: transform 0.3s ease;
 }
 
-.stack-card:hover .stack-icon-big {
+.stack-card:hover .stack-visual-icon {
   transform: scale(1.15) rotate(6deg);
 }
 
@@ -954,9 +795,7 @@ button, input, select, textarea {
   opacity: 0.9;
 }
 
-/* --------------------------------------------------------------------------
-   10. HARMONISASI TARGET SDG 13 & 14
-   -------------------------------------------------------------------------- */
+/* Target SDG 13 & 14 */
 .sdg-section {
   padding: 100px 0;
   background: linear-gradient(180deg, var(--color-bg-light) 0%, #eef7fc 100%);
@@ -1092,10 +931,8 @@ button, input, select, textarea {
   line-height: 1.55;
 }
 
-/* --------------------------------------------------------------------------
-   11. CEKLIS INTERAKTIF (MURNI CSS SELECTOR :checked)
-   -------------------------------------------------------------------------- */
-.interactive-section {
+/* Checklist kebiasaan */
+.checklist-section {
   padding: 100px 0;
   background-color: var(--color-bg-white);
 }
@@ -1134,14 +971,12 @@ button, input, select, textarea {
   transform: translateX(4px);
 }
 
-/* Sembunyikan default input checkbox */
-.custom-checkbox {
+.check-input {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-/* Kotak visual murni CSS */
 .check-box-visual {
   flex-shrink: 0;
   width: 24px;
@@ -1194,28 +1029,27 @@ button, input, select, textarea {
   transition: all 0.2s ease;
 }
 
-/* Interaksi Pure CSS saat Checkbox Aktif (:checked) */
-.custom-checkbox:checked + .check-box-visual {
+.check-input:checked + .check-box-visual {
   background-color: var(--color-mangrove-600);
   border-color: var(--color-mangrove-600);
 }
 
-.custom-checkbox:checked + .check-box-visual::after {
+.check-input:checked + .check-box-visual::after {
   opacity: 1;
   transform: scale(1);
 }
 
-.custom-checkbox:checked ~ .check-text-content strong {
+.check-input:checked ~ .check-text-content strong {
   color: var(--color-mangrove-800);
 }
 
-.custom-checkbox:checked ~ .check-impact-tag {
+.check-input:checked ~ .check-impact-tag {
   background-color: var(--color-mangrove-100);
   color: var(--color-mangrove-800);
   box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
 }
 
-.check-item:has(.custom-checkbox:checked) {
+.check-item:has(.check-input:checked) {
   border-color: var(--color-mangrove-500);
   background-color: var(--color-mangrove-50);
 }
@@ -1252,9 +1086,7 @@ button, input, select, textarea {
   color: var(--color-marine-100);
 }
 
-/* --------------------------------------------------------------------------
-   13. FOOTER
-   -------------------------------------------------------------------------- */
+/* Footer */
 .site-footer {
   background-color: var(--color-marine-950);
   color: #ffffff;
@@ -1411,13 +1243,8 @@ button, input, select, textarea {
   opacity: 0.8;
 }
 
-/* --------------------------------------------------------------------------
-   13.5. SEKSI JELAJAH KEDALAMAN SAMUDRA
-   (Latar gradasi statis, sunbeam statis & gelembung naik, murni CSS3)
-   -------------------------------------------------------------------------- */
-
-/* SEKSI UTAMA JELAJAH PARALLAX KEDALAMAN SAMUDRA */
-.parallax-experience-section {
+/* Zona kedalaman laut */
+.depth-explorer-section {
   position: relative;
   min-height: 940px;
   padding: 100px 0 130px;
@@ -1426,15 +1253,14 @@ button, input, select, textarea {
   color: #ffffff;
 }
 
-/* Lapisan 0: Background Samudra Dalam */
-.parallax-deep-ocean-bg {
+.depth-explorer-bg {
   position: absolute;
   inset: 0;
   z-index: 1;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: 
+  background-image:
     radial-gradient(circle at 50% 15%, rgba(56, 189, 248, 0.35) 0%, transparent 60%),
     radial-gradient(circle at 85% 75%, rgba(16, 185, 129, 0.22) 0%, transparent 50%),
     linear-gradient(180deg, rgba(7, 25, 44, 0.82) 0%, rgba(10, 37, 64, 0.85) 60%, rgba(7, 25, 44, 0.98) 100%),
@@ -1442,32 +1268,30 @@ button, input, select, textarea {
   pointer-events: none;
 }
 
-/* Lapisan Background Gambar Samudra Dalam */
-.parallax-deep-ocean-bg {
+.depth-explorer-bg {
   position: absolute;
   inset: 0;
   z-index: 1;
   background-image:
     linear-gradient(180deg, rgba(7, 25, 44, 0.75) 0%, rgba(10, 37, 64, 0.85) 60%, rgba(7, 25, 44, 0.95) 100%),
-    url('images/parallax-bg.jpg'); /* Ganti dengan nama file gambar kamu */
+    url('../images/depth-explorer-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   pointer-events: none;
 }
 
-/* KONTEN FOREGROUND PARALLAX (Z-INDEX TERTINGGI) */
-.parallax-experience-container {
+.depth-explorer-container {
   position: relative;
   z-index: 5;
 }
 
-.parallax-header {
+.depth-explorer-header {
   max-width: 800px;
   margin: 0 auto 60px;
 }
 
-.parallax-exp-title {
+.depth-explorer-title {
   font-family: var(--font-heading);
   font-size: 2.75rem;
   font-weight: 800;
@@ -1483,13 +1307,12 @@ button, input, select, textarea {
   -webkit-text-fill-color: transparent;
 }
 
-.parallax-exp-subtitle {
+.depth-explorer-subtitle {
   font-size: 1.1rem;
   color: var(--color-marine-100);
   line-height: 1.7;
 }
 
-/* GRID KARTU KEDALAMAN */
 .depth-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1582,8 +1405,7 @@ button, input, select, textarea {
   font-size: 0.9375rem;
 }
 
-/* QUOTE DI BAWAH ZONA PARALLAX */
-.parallax-quote-box {
+.depth-quote-box {
   max-width: 840px;
   margin: 0 auto;
   padding: 40px 30px;
@@ -1594,8 +1416,7 @@ button, input, select, textarea {
   -webkit-backdrop-filter: blur(10px);
 }
 
-/* Teks kutipan & pill di dalam .parallax-quote-box */
-.parallax-quote {
+.depth-quote {
   font-family: var(--font-heading);
   font-size: 2.35rem;
   font-weight: 700;
@@ -1606,14 +1427,14 @@ button, input, select, textarea {
   text-shadow: 0 4px 18px rgba(7, 25, 44, 0.6);
 }
 
-.parallax-pills {
+.depth-quote-pills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 14px;
 }
 
-.parallax-pill {
+.depth-quote-pill {
   display: inline-flex;
   align-items: center;
   padding: 10px 22px;
@@ -1629,15 +1450,12 @@ button, input, select, textarea {
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.parallax-pill:hover {
+.depth-quote-pill:hover {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* --------------------------------------------------------------------------
-   13.8. INFINITE CAROUSEL ANIMATION (MURNI CSS3)
-   (Continuous horizontal marquee looping automatically without JS)
-   -------------------------------------------------------------------------- */
+/* ona konservasi */
 .infinite-carousel-section {
   padding: 100px 0 110px;
   background: linear-gradient(180deg, var(--color-marine-950) 0%, #071f36 50%, var(--color-marine-900) 100%);
@@ -1654,8 +1472,7 @@ button, input, select, textarea {
   margin-bottom: 50px;
 }
 
-/* Wrapper dengan efek fade di kedua sisi (Bebas hitam, memakai mask putih murni) */
-.carousel-outer-wrapper {
+.carousel-viewport {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -1664,7 +1481,6 @@ button, input, select, textarea {
   -webkit-mask-image: linear-gradient(to right, transparent 0%, #ffffff 8%, #ffffff 92%, transparent 100%);
 }
 
-/* Track yang meluncur tanpa henti secara horizontal (Infinite Marquee Loop) */
 .carousel-track {
   display: flex;
   gap: 32px;
@@ -1673,7 +1489,6 @@ button, input, select, textarea {
   will-change: transform;
 }
 
-/* Interaktivitas: Pause animasi saat kursor diarahkan ke kartu */
 .carousel-track:hover {
   animation-play-state: paused;
 }
@@ -1683,12 +1498,10 @@ button, input, select, textarea {
     transform: translateX(0);
   }
   100% {
-    /* 5 kartu pertama + jarak gap bergerak persis separuh total track */
-    transform: translateX(calc(-50% - 16px));
+    transform: translateX(calc(-50% - 16px)); /* setengah track + setengah gap */
   }
 }
 
-/* Kartu Carousel */
 .carousel-card {
   width: 420px;
   min-height: 460px;
@@ -1720,9 +1533,13 @@ button, input, select, textarea {
 }
 
 .carousel-card.card-pantura::before { background: linear-gradient(90deg, #10b981, #059669); }
+
 .carousel-card.card-kepri::before { background: linear-gradient(90deg, #38bdf8, #0284c7); }
+
 .carousel-card.card-wakatobi::before { background: linear-gradient(90deg, #f59e0b, #ea580c); }
+
 .carousel-card.card-rajaampat::before { background: linear-gradient(90deg, #10b981, #38bdf8); }
+
 .carousel-card.card-banda::before { background: linear-gradient(90deg, #0284c7, #6366f1); }
 
 .carousel-card:hover {
@@ -1730,7 +1547,8 @@ button, input, select, textarea {
   border-color: rgba(56, 189, 248, 0.6);
   box-shadow: 0 22px 55px rgba(2, 132, 199, 0.35);
 }
-.exp-visual-icon {
+
+.carousel-card-icon {
   width: 48px;
   height: 48px;
   background: rgba(56, 189, 248, 0.15);
@@ -1746,21 +1564,20 @@ button, input, select, textarea {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.carousel-card:hover .exp-visual-icon {
+.carousel-card:hover .carousel-card-icon {
   transform: scale(1.1) rotate(5deg);
   background: var(--color-marine-500);
   color: #ffffff;
 }
 
-/* 3. Grid Metrics Glassmorphism Widget */
-.exp-metrics {
+.carousel-card-metrics {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
   margin: 16px 0;
 }
 
-.metric-item {
+.carousel-metric {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
@@ -1768,7 +1585,7 @@ button, input, select, textarea {
   backdrop-filter: blur(4px);
 }
 
-.metric-val {
+.carousel-metric-value {
   display: block;
   font-family: var(--font-heading);
   font-size: 1.1rem;
@@ -1776,70 +1593,65 @@ button, input, select, textarea {
   color: var(--color-marine-400);
 }
 
-.metric-lbl {
+.carousel-metric-label {
   display: block;
   font-size: 0.75rem;
   color: var(--color-marine-100);
   opacity: 0.85;
 }
-/* ==========================================================================
-   14. RESPONSIVE MEDIA QUERIES
-   (Dioptimalkan untuk Desktop 1440px, Tablet 768px, Smartphone 375px)
-   ========================================================================== */
 
-/* Layar Lebar / Desktop Besar (1440px & ke atas) */
 @media (min-width: 1440px) {
   :root {
     --container-max: 1320px;
   }
+
   .hero-title {
     font-size: 3.75rem;
   }
-  .ocean-card {
-    height: 520px;
-  }
 }
 
-/* Tablet & Layar Sedang (Maksimal 1024px) */
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
   }
+
   .hero-content {
     margin: 0 auto;
     max-width: 680px;
   }
-  .sdg-pill-group,
-  .hero-cta-group,
-  .trust-tags {
+
+  .hero-focus-tags {
     justify-content: center;
   }
+
   .hero-description {
     margin-left: auto;
     margin-right: auto;
   }
-  .visual-card-wrapper {
-    margin: 0 auto;
-    max-width: 440px;
-  }
+
   .threats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 36px;
   }
-  .parallax-quote {
+
+  .depth-quote {
     font-size: 2rem;
   }
+
   .depth-cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .depth-tier-3 {
     grid-column: span 2;
     max-width: 540px;
@@ -1847,7 +1659,6 @@ button, input, select, textarea {
     width: 100%;
   }
 
-  /* Overlapping Cards & Infinite Carousel Tablet Adaptations */
   .stack-card-content {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -1867,15 +1678,13 @@ button, input, select, textarea {
   }
 }
 
-/* Tablet (768px - Responsive Point Standar) */
 @media (max-width: 768px) {
-  /* Zona Jelajah Kedalaman (Mobile) */
-  .parallax-experience-section {
+  .depth-explorer-section {
     min-height: auto;
     padding: 70px 0 90px;
   }
 
-  .parallax-exp-title {
+  .depth-explorer-title {
     font-size: 2.1rem;
   }
 
@@ -1890,17 +1699,16 @@ button, input, select, textarea {
     max-width: none;
   }
 
-  .parallax-quote {
+  .depth-quote {
     font-size: 1.65rem;
     line-height: 1.4;
   }
 
-  .parallax-pill {
+  .depth-quote-pill {
     padding: 8px 16px;
     font-size: 0.85rem;
   }
 
-  /* Mobile Hamburger Nav via Checkbox Hack */
   .nav-toggle-label {
     display: flex;
   }
@@ -1931,7 +1739,6 @@ button, input, select, textarea {
     }
   }
 
-  /* Checkbox Hack Trigger */
   .nav-toggle:checked ~ .main-navigation {
     display: flex;
   }
@@ -1962,19 +1769,12 @@ button, input, select, textarea {
     border-bottom: 1px solid var(--color-bg-light);
   }
 
-
-
-  /* Hero & Headings */
   .hero-title {
     font-size: 2.5rem;
   }
 
   .section-title {
     font-size: 1.875rem;
-  }
-
-  .ocean-card {
-    height: 420px;
   }
 
   .badge-top-left {
@@ -1987,14 +1787,18 @@ button, input, select, textarea {
     bottom: 20px;
   }
 
-  /* Grid Layouts di Tablet */
   .stack-card {
     padding: 30px 24px;
   }
-  .stack-card-1 { top: 80px; }
-  .stack-card-2 { top: 105px; }
-  .stack-card-3 { top: 130px; }
-  .stack-card-4 { top: 155px; }
+
+  .stack-card-mangrove { top: 80px; }
+
+  .stack-card-coral { top: 105px; }
+
+  .stack-card-cleanup { top: 130px; }
+
+  .stack-card-community { top: 155px; }
+
   .carousel-track { animation-duration: 32s; }
 
   .sdg-comparison-grid {
@@ -2006,7 +1810,6 @@ button, input, select, textarea {
   }
 }
 
-/* Smartphone Layar Kecil (375px - Mobile Standar) */
 @media (max-width: 480px) {
   html {
     font-size: 15px;
@@ -2032,19 +1835,6 @@ button, input, select, textarea {
 
   .hero-description {
     font-size: 1rem;
-  }
-
-  .hero-cta-group {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .ocean-card {
-    height: 380px;
   }
 
   .floating-badge {
@@ -2104,11 +1894,11 @@ button, input, select, textarea {
     gap: 10px;
   }
 
-  .parallax-experience-section {
+  .depth-explorer-section {
     padding: 50px 0 70px;
   }
 
-  .parallax-exp-title {
+  .depth-explorer-title {
     font-size: 1.7rem;
   }
 
@@ -2116,30 +1906,32 @@ button, input, select, textarea {
     padding: 24px 18px;
   }
 
-  .parallax-quote {
+  .depth-quote {
     font-size: 1.45rem;
   }
 
-  .parallax-pills {
+  .depth-quote-pills {
     flex-direction: column;
     width: 100%;
   }
 
-  .parallax-pill {
+  .depth-quote-pill {
     width: 100%;
     justify-content: center;
   }
 
-  /* Overlapping Cards & Carousel Mobile Tuning */
   .stack-card {
     padding: 24px 18px;
     top: 75px;
   }
 
-  .stack-card-1 { top: 70px; }
-  .stack-card-2 { top: 90px; }
-  .stack-card-3 { top: 110px; }
-  .stack-card-4 { top: 130px; }
+  .stack-card-mangrove { top: 70px; }
+
+  .stack-card-coral { top: 90px; }
+
+  .stack-card-cleanup { top: 110px; }
+
+  .stack-card-community { top: 130px; }
 
   .stack-title {
     font-size: 1.35rem;
@@ -2157,48 +1949,54 @@ button, input, select, textarea {
   }
 }
 
-/* Optimasi Khusus Smartphone 375px */
 @media (max-width: 375px) {
   .hero-title {
     font-size: 1.85rem;
   }
+
   .section-title {
     font-size: 1.625rem;
   }
+
   .stack-card {
     padding: 20px 16px;
   }
+
   .stack-title {
     font-size: 1.25rem;
   }
+
   .carousel-card {
     padding: 20px 16px;
     min-height: 390px;
   }
-  .parallax-quote {
+
+  .depth-quote {
     font-size: 1.3rem;
   }
+
   .stat-number {
     font-size: 1.625rem;
   }
 }
 
-
+/* Profil tim */
 .team-section {
   padding: 80px 0 100px;
   background-color: var(--color-bg-light);
 }
 
 .team-grid {
-  display: flex;           /* Ganti dari grid ke flex */
-  flex-wrap: wrap;         /* Izinkan kartu turun ke baris baru */
-  justify-content: center; /* Otomatis meratakan kartu ke tengah (termasuk baris terakhir) */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 28px;
   margin-top: 48px;
 }
+
 .team-card {
-  flex: 1 1 280px;         /* Kartu fleksibel dengan lebar minimal 280px */
-  max-width: 360px;        /* Batas lebar maksimal agar kartu di baris ke-2 tidak terlalu lebar */
+  flex: 1 1 280px;
+  max-width: 360px;
   background: var(--color-bg-white);
   border: 1px solid var(--color-border);
   border-top: 4px solid var(--color-marine-500);
@@ -2217,14 +2015,13 @@ button, input, select, textarea {
   border-top-color: var(--color-marine-600);
 }
 
-/* Wadah isi kartu dengan padding penuh & aman */
 .team-body {
-  padding: 28px 24px; /* Memberi jarak dalam dari border */
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-  box-sizing: border-box; /* Memastikan padding tidak merusak lebar elemen */
+  box-sizing: border-box;
 }
 
 .team-name {
@@ -2253,12 +2050,11 @@ button, input, select, textarea {
   margin-bottom: 20px;
 }
 
-/* Tag Keahlian / Skill */
 .team-skills {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: auto; /* Mendorong skill tag ke dasar kartu secara sejajar */
+  margin-top: auto;
 }
 
 .skill-tag {
@@ -2271,6 +2067,7 @@ button, input, select, textarea {
   border-radius: 4px;
 }
 
+/* Referensi */
 .references-section {
   padding: 80px 0 100px;
   background-color: var(--color-bg-white);
@@ -2300,7 +2097,6 @@ button, input, select, textarea {
   border-color: var(--color-marine-400);
 }
 
-/* Header Kartu Referensi */
 .ref-card-header {
   display: flex;
   align-items: center;
@@ -2330,7 +2126,6 @@ button, input, select, textarea {
   color: var(--color-text-main);
 }
 
-/* Daftar Item Referensi */
 .ref-list {
   list-style: none;
   padding: 0;
