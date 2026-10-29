@@ -190,4 +190,3 @@ jaga-pesisir/
 * **Google Fonts:** Font *Plus Jakarta Sans* & *Outfit* (Lisensi *SIL Open Font License*).
 * **Font Awesome 6 Free:** Ikon UI/UX Vektor (Lisensi *CC BY 4.0*).
 * **Unsplash & Pexels:** Gambar latar belakang & visual kartu (Lisensi Bebas Komersial).
-```
