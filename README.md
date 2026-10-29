@@ -1,10 +1,3 @@
-Berikut adalah berkas **`README.md`** yang telah disesuaikan secara presisi dengan seluruh kriteria dan struktur dokumentasi wajib pada **Panduan Proyek UTS Pemrograman Web**. 
-
-Dokumentasi ini sudah memuat identitas kelompok, perincian 5 halaman HTML, penjelasan teknis potongan kode (termasuk *Stacking Cards*, *Infinite Carousel*, dan *Checkbox Hack*), struktur direktori, hingga atribusi lisensi aset.
-
----
-
-```markdown
 # 🌊 Jaga Pesisir — Platform Edukasi Konservasi Laut & Pesisir Nusantara
 
 > **Responsive Educational Website** mengenai Pelestarian Ekosistem Pesisir, Restorasi Mangrove, dan Perlindungan Keanekaragaman Hayati Laut Indonesia.
